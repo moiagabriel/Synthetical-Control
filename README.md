@@ -3,8 +3,9 @@ Avaliação da CFEM no município de Parauapebas (PA) através do controle sint�
 
 
 O trabalho faz parte do projeto de pesquisa que avalia o impacto da mineração no sudeste paraense (BR). O controle sintético faz parte da estatística
-multivariada, e tem o objetivo de avaliar o impacto de uma intervenção/evento/política que um território sofre em uma determinada trajetória (ao longo do tempo)
-de acordo com uma variável de estudo. 
+multivariada, e tem o objetivo de avaliar o impacto de uma intervenção/evento/política que um território sofre em uma determinada trajetória (ao longo do tempo) de acordo com uma variável de estudo. 
+
+Os comandos do controle sintético foram rodados através do STATA. As bases de dados encontram-se disponíveis dentro da pasta do repositório. 
 
 A estipulação da Compensação Financeira pela Exploração Mineral (CFEM) é caracterizada como uma contraprestação da exploração econômica dos recursos minerais em seus respectivos territórios. 
 O recebimento da CFEM em municípios da Amazônia introduz novas questões para a dinâmica de desenvolvimento esperado para a região, como o progresso de indicadores sociais e econômicos da população residente. 
