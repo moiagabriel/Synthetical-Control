@@ -1,8 +1,44 @@
-{
-	"folders": [
-		{
-			"path": "Comandos Stata"
-		}
-	],
-	"settings": {}
-}
+the commands to use in stata:
+### Instalar o pacote do controle sintético (STATA 16 +)
+ssc install synth
+
+### Criação do contrafactual 
+## PIB
+xtset PIB (BI) ID
+synth PIB (BI) REMUNERACAO/EDUCACAO TXURB ANOS ESTUDO, trunit(78) trperiod(1991) nested fig
+
+## PIB per capita
+xtset PIB PC ID
+synth PIB PC REMUNERACAO/EDUCACAO TXURB ANOS ESTUDO, trunit(78) trperiod(1991) nested fig
+
+## Geração de emprego
+xtset EMPREGO(MIL) ID
+synth EMPREGO(MIL) TAXA DE CRESCIMENTO DO PIB REMUNERACAO/EDUCACAO, trunit(78) trperiod(1991) nested fig
+
+## Despesa pública
+xtset DESP.PUBL(MI) ID
+synth DESP.PUBL(MI) ICMS DESPESA, trunit(78) trperiod(1991) nested fig
+
+## População residente
+xtset POP(MIL) ID
+synth POP(MIL) POP URBANA POP RURAL, trunit(78) trperiod(1991) nested fig
+
+## Despesa pública em educação e cultura
+xtset EDUC E CULT (MI) ID
+synth EDUC E CULT (MI) ELEITORADO REMUNERACAO/EDUCACAO, trunit(78) trperiod(1991) nested fig
+
+## Taxa de homicídio
+xtset TXHOM ID
+synth TXHOM MASC JOVENS FEM, trunit(78) trperiod(1991) nested fig
+
+## Percentual do atendimento de água
+xtset PERCENTUAL (%) ID
+synth PERCENTUAL (%) EMPREGADOS UNIDADE(MIL), trunit(77) trperiod(1991) nested fig
+
+## Percentual do atendimento de esgotamento sanitário
+xtset PERCENTUAL ID
+synth PERCENTUAL UNIDADES DE CONSUMO POP.TOTAL DESPESA SES, trunit(78) trperiod(1991) nested fig
+
+## Percentual do atendimento de coleta de resíduos
+xtset PERCENTUAL ID
+xtset PERCENTUAL POP.TOTAL DESPESA SANEAMENTO, trunit(78) trperiod(1991) nested fig
